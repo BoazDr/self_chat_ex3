@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/rl_custom_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="2dp"-->
+    <!--android:background="#ab2fc4"-->
+    <!--&gt;-->
+    <!--<Button-->
+        <!--android:id="@+id/ib_close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@null"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="This is a sample popup window."-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:padding="25sp"-->
+        <!--/>-->
+<!--</RelativeLayout>-->
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7d000000"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/layout_popup_txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Are you sure?"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes_popup_button"
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Yes" />
+
+            <Button
+                android:id="@+id/no_popup_button"
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="No" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
